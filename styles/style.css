@@ -59,6 +59,7 @@ nav ul li a {
 
 .dark-3 {
     color: rgb(114, 114, 114);
+    line-height: 26px;
 }
 
 .second-bg {
@@ -179,7 +180,6 @@ main>section {
 .facts-container {
     display: grid;
     grid-template-columns: repeat(4, 2fr);
-    /* border: 2px solid red; */
     margin-top: 100px;
 }
 
@@ -209,6 +209,58 @@ main>section {
 
 /* facts styles end */
 
+/* exprience section style start */
+.experience{
+    display: flex;
+    gap: 130px;
+}
+
+#experience-section-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 29px;
+}
+.exprience-title{
+    color: rgb(19, 19, 19);
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 53px;
+    margin-bottom: 23px;
+}
+
+#ex-title{
+    margin-bottom: 30px;
+}
+#btn{
+    padding: 45px 40px;
+    margin-left: -120px;
+    margin-top: -100px;
+}
+#ten-year{
+    font-size: 4.5rem;
+    font-weight: 700;
+}
+.exprience-box{
+    margin-bottom: 30px;
+}
+.experience-box-title{
+    color: rgb(19, 19, 19);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23px;
+    margin-bottom: 10px;
+}
+.exprience-box{
+    max-width: 580px;
+    padding: 34px;
+    border-radius: 9px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+}
+
+.exprience-content > img{
+    width: 100%;
+}
+/* exprience section style end */
+
 /* sponsed styles start */
 
 .sponser-text{
@@ -235,12 +287,34 @@ main>section {
 }
 /* sponsed styles end */
 
+/* footer section start  */
+
+footer{
+    background-color: rgb(255, 244, 231);
+    line-height: 100px;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 130px;
+    margin-bottom: 100px;
+    border-radius: 8px;
+}
+
+.footer-section{
+    color: rgb(66, 66, 66);
+    font-size: 20px;
+    font-weight: 500;
+}
+/* footer section end  */
+
 /* responsive media queary */
 @media screen and (max-width: 576px) {
 
     .navbar,
     .nav-ul,
-    .feature-container {
+    .feature-container,
+    .experience
+     {
         flex-direction: column;
     }
 
@@ -254,6 +328,10 @@ main>section {
 
     .navbar {
         margin-bottom: 30px;
+    }
+
+    #ten-year{
+        font-size: 3.5rem;
     }
 
     .feature-content , .facts-container , .sponser-icon {
@@ -272,11 +350,19 @@ main>section {
         gap: 50px;
         justify-items: center;
     }
+    .experience{
+        justify-items: center;
+    }
+    #btn{
+        margin-left: 100px;
+        margin-right: 100px;
+        padding: 21px;
+    }
 }
 
 /* medium device */
 @media screen and (min-width: 576px) and (max-width: 992px) {
-    .feature-container {
+    .feature-container, .experience {
         flex-direction: column;
     }
     .sponser-icon{
@@ -284,5 +370,10 @@ main>section {
         gap: 40px;
         justify-items: center;
         justify-content: center;
+    }
+        #btn{
+            margin-left: 100px;
+            margin-right: 100px;
+            padding: 21px;
     }
 }
