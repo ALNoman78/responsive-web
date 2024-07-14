@@ -95,15 +95,60 @@ nav ul li a{
 }
 /* banner content styles ens */
 
+/* main section styles start */
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+/* main section styles end */
+
+/* feature section styles start */
+
+.feature{
+    margin-top: 80px;
+}
+.feature-container{
+    display: flex;
+    border: 2px solid red;
+    gap: 80px;
+    align-items: center;
+}
+.feature-content{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    gap: 25px;
+}
+.feature-text{
+    max-width: 537px;
+    height: 304px;
+    border: 2px solid red;
+}
+.feature-text > h3{
+    margin-bottom: 24px;
+    font-size: 45px;
+    font-weight: 700;
+}
+.of-our{
+    color: #131313;
+}
+.feature{
+    color: #FF900E;
+}
+/* feature section styles end */
+
+
 /* responsive media queary */
 @media screen and (max-width: 576px) {
     .navbar , .nav-ul{
         flex-direction: column;
     }
     .banner-title{
-        font-size: 2.7rem;
+        font-size: 2.3rem;
     }
     .banner-image{
         margin: 0;
+    }
+    .navbar{
+        margin-bottom: 30px;
     }
 }
