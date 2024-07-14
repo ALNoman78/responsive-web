@@ -358,6 +358,9 @@ footer{
         margin-right: 100px;
         padding: 21px;
     }
+    .footer-section{
+        font-size: 15px;
+    }
 }
 
 /* medium device */
