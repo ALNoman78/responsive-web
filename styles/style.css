@@ -4,6 +4,10 @@
     box-sizing: border-box;
     font-family: "Work Sans", sans-serif;
 }
+
+body{
+    overflow-x: hidden;
+}
 /* navigation bar styles start */
 .navbar {
     display: flex;
