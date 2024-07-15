@@ -4,16 +4,6 @@
     box-sizing: border-box;
     font-family: "Work Sans", sans-serif;
 }
-
-/* header style start  */
-
-header {
-    background-color: rgba(255, 144, 14, 0.1);
-
-}
-
-/* header style ends */
-
 /* navigation bar styles start */
 .navbar {
     display: flex;
